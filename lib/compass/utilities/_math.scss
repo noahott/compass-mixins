@@ -1,4 +1,5 @@
 @function cm-divide($dividend, $divisor, $precision: 10) {
+  @debug ($dividend, $divisor, $precision);
   $sign: if($dividend > 0 and $divisor > 0 or $dividend < 0 and $divisor < 0, 1, -1);
   $dividend: abs($dividend);
   $divisor: abs($divisor);

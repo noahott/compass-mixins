@@ -33,7 +33,7 @@ $base-rhythm-unit: cm-divide($base-line-height, $base-font-size) * $font-unit;
 
 // The leader is the amount of whitespace in a line.
 // It might be useful in your calculations.
-$base-leader: cm-divide(($base-line-height - $base-font-size), $base-font-size);
+$base-leader: cm-divide(($base-line-height - $base-font-size) * $font-unit, $base-font-size);
 
 // The half-leader is the amount of whitespace above and below a line.
 // It might be useful in your calculations.
